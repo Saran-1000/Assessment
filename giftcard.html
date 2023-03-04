@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Gift card order page</title>
+    <style>
+        #cen td {
+            padding-left: 150px;
+        }
+        #sd {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+
+    }
+
+        #sd a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        div#sm {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="images.jpg" class="rounded-circle" alt="" height="50px" width="50px">
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Place Gift card order</a></li>
+                <li><a href="#">View Gift card orders</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="sd" height="100%">
+        <a href="#">Home</a>
+        <br />
+        <br />
+        <a href="#">Place Gift card order</a>
+        <br />
+        <br />
+        <a href="#">View Gift Card orders</a>
+        <br />
+        <br />
+        <a href="#">Contact Us</a>
+        <br />
+        <br />
+    </div>
+    <div id="sm">
+        <form action="">
+            <table>
+                <tr>
+                    <td>Gift card amount:</td>
+                    <td><input type="number" required></td>
+
+                    <td>:<input type="number" required></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>INR</td>
+
+                    <td>Paisa</td>
+                </tr>
+                <tr>
+                    <td>Recipient Name:</td>
+                    <td><input type="text" pattern="[a-z][A-z]" required></td>
+                    <td><input type="text" pattern="[a-z][A-z]" required></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>firstname</td>
+                    <td>lastname</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <fieldset>
+                            <legend>Shipping address</legend>
+                            <table>
+                                <tr>
+                                    <td colspan="2"><input type="text" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Street Address</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" required></td>
+                                    <td><input type="text" required></td>
+                                </tr>
+                                <tr>
+                                    <td>city</td>
+                                    <td>State</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="Country" id="cntry" required>
+                                            <option value="India">India</option>
+                                            <option value="USA">USA</option>
+                                            <option value="Russia">Russia</option>
+                                            <option value="England">England</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="number" pattern="[0-9]{6}" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>pincode</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Buyer's Name:</td>
+                    <td><input type="text" pattern="[a-z][A-z]" required></td>
+                    <td><input type="text" pattern="[a-z][A-z]" required></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>firstname</td>
+                    <td>lastname</td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="number" required pattern="[6789]{1}[0-9]{9}"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" required pattern="[a-z][A-z][@]{1}[0-9][.]{1}"></td>
+                </tr>
+                <tr id="cen">
+                    <td colspan="3"><button>Place order</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
